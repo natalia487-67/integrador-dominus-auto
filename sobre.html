@@ -275,7 +275,7 @@ nav a:hover, nav a.active { border-bottom: 3px solid var(--gold-light); }
 .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px; margin-top: 20px; }
 .team-grid .team-member { flex-direction: column; text-align: center; gap: 10px; margin-bottom: 0; }
 .team-grid .team-member img, .team-grid .avatar-fallback { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; }
-.avatar-fallback { background-color: var(--bg-main); border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--gold); font-size: 22px; }
+.avatar-fallback { background-color: var(--bg-main); border: 2px solid var(--gold); display: none; align-items: center; justify-content: center; font-weight: 800; color: var(--gold); font-size: 22px; }
 
 /* ===== Home: frota em destaque + estatísticas ===== */
 .stats-bar { background-color: var(--teal-dark); display: flex; justify-content: center; gap: 60px; padding: 30px 20px; flex-wrap: wrap; }
@@ -365,20 +365,21 @@ nav a:hover, nav a.active { border-bottom: 3px solid var(--gold-light); }
       <p class="about-text" style="margin-bottom:0;">Toda a equipe por trás da Dominus Auto.</p>
       <div class="team-grid">
         <div class="team-member">
-          <img src="assets/team1.jpg" alt="Matheo Medeiros Nunes">
-          <span>Matheo Medeiros Nunes</span>
-        </div>
-        <div class="team-member">
-          <img src="assets/team2.jpg" alt="Ana Clara Cruz Alves">
-          <span>Ana Clara Cruz Alves</span>
-        </div>
-        <div class="team-member">
-          <img src="assets/team3.jpg" alt="Natália Santos Barbosa">
+          <img src="assets/team1.jpg" alt="Natália Santos Barbosa">
           <span>Natália Santos Barbosa</span>
         </div>
         <div class="team-member">
-          <div class="avatar-fallback">YV</div>
+          <img src="assets/team2.jpg" alt="Yasmin Vidal Pereira">
           <span>Yasmin Vidal Pereira</span>
+        </div>
+        <div class="team-member">
+          <img src="assets/team3.jpg" alt="Tainá Medeiros Nunes">
+          <span>Tainá Medeiros Nunes</span>
+        </div>
+        <div class="team-member">
+          <img src="assets/team4.jpg" alt="Ana Clara Cruz Alves" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="avatar-fallback">AC</div>
+          <span>Ana Clara Cruz Alves</span>
         </div>
       </div>
     </div>
